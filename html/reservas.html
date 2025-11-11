@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - FocusPoint</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/reservas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../logonew-.png" alt="ChristianDjFoto" style="height: 50px;"></a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="sobre-mi.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="sesiones.html" class="nav-link">Sesiones</a></li>
+                    <li class="nav-item"><a href="reservas.html" class="nav-link active">Reservas</a></li>
+                    <li class="nav-item">
+                        <button class="search-btn" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Barra de búsqueda -->
+    <div class="search-bar" id="searchBar">
+        <div class="search-container">
+            <input type="text" placeholder="Buscar..." class="search-input" id="searchInput">
+            <button class="close-search" id="closeSearch">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="reservas-hero">
+        <div>
+            <h1>Reserva tu Sesión</h1>
+            <p>Hagamos realidad tus ideas fotográficas</p>
+        </div>
+    </section>
+
+    <!-- Formulario y contacto -->
+    <section class="reservas-section">
+        <div class="container">
+            <div class="reservas-container">
+                <!-- Información de contacto -->
+                <div class="contact-info">
+                    <h2>Contáctanos</h2>
+                    <p>Estamos aquí para ayudarte a capturar tus momentos más especiales. No dudes en contactarnos por cualquier medio.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Teléfono</h3>
+                            <p><a href="tel:+51999999999">+51 999 999 999</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:contacto@focuspoint.pe">contacto@focuspoint.pe</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Ubicación</h3>
+                            <p>Arequipa, Perú</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Horario de Atención</h3>
+                            <p>Lun - Sáb: 9:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="social-contact">
+                        <h3>Síguenos en Redes</h3>
+                        <div class="social-links-contact">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div class="reservation-form-container">
+                    <h2>Solicita tu Reserva</h2>
+                    <form id="reservationForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Nombre <span class="required">*</span></label>
+                                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Apellido <span class="required">*</span></label>
+                                <input type="text" name="apellido" placeholder="Tu apellido" required>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Email <span class="required">*</span></label>
+                                <input type="email" name="email" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Teléfono <span class="required">*</span></label>
+                                <input type="tel" name="telefono" placeholder="+123 456 7890" required>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Tipo de Sesión <span class="required">*</span></label>
+                                <select name="tipo_sesion" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="boda">Boda</option>
+                                    <option value="evento">Evento Corporativo</option>
+                                    <option value="retrato">Retrato Personal</option>
+                                    <option value="producto">Fotografía de Producto</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Fecha Deseada <span class="required">*</span></label>
+                                <input type="date" name="fecha" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label>Presupuesto Estimado</label>
+                            <select name="presupuesto">
+                                <option value="">Selecciona un rango</option>
+                                <option value="200-500">$200 - $500</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-2000">$1,000 - $2,000</option>
+                                <option value="2000+">$2,000+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label>Cuéntame sobre tu proyecto <span class="required">*</span></label>
+                            <textarea name="mensaje" placeholder="Describe tu proyecto, ideas, expectativas..."
+                                required></textarea>
+                        </div>
+
+                        <div class="form-group full-width checkbox-group">
+                            <input type="checkbox" id="acepto" name="acepto" required>
+                            <label for="acepto">Acepto la política de privacidad y términos de servicio <span
+                                    class="required">*</span></label>
+                        </div>
+
+                        <button type="submit" class="form-submit">
+                            Enviar Solicitud
+                        </button>
+                    </form>
+
+                    <!-- Mensaje de éxito -->
+                    <div class="success-message">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>¡Solicitud Enviada!</h3>
+                        <p>Gracias por contactarme. Revisaré tu solicitud y te responderé en menos de 24 horas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Cuánto tiempo antes debo reservar?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Recomiendo reservar con al menos 2-3 meses de anticipación, especialmente para bodas y
+                            eventos importantes. Sin embargo, también puedo acomodar solicitudes de último momento
+                            dependiendo de mi disponibilidad.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Qué incluyen tus paquetes?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Cada paquete incluye cobertura fotográfica, edición profesional de imágenes, galería online
+                            privada y entrega digital. Los paquetes premium también incluyen álbumes físicos y videos
+                            resumen.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Cuánto tiempo toma recibir las fotos?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El tiempo de entrega varía según el paquete: de 7 a 15 días hábiles. Para eventos urgentes,
+                            ofrezco servicio express con entrega en 48-72 horas por un cargo adicional.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Viajas a otras ciudades?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, estoy disponible para viajar a cualquier ubicación. Los costos de viaje se calculan según
+                            la distancia y se incluyen en la cotización final.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Qué pasa si el clima no coopera?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Para sesiones al aire libre, siempre tenemos planes B. Podemos reprogramar sin costo
+                            adicional o buscar locaciones alternativas bajo techo si es necesario.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Puedo ver ejemplos de tu trabajo?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>¡Por supuesto! Visita mi página de <a href="sesiones.html"
+                                style="color: var(--color-acento);">Sesiones</a> para ver mi portafolio completo y
+                            ejemplos de diferentes tipos de fotografía.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="../index.html">
+                        <img src="../logonew-.png" alt="FocusPoint" style="height: 60px; margin-bottom: 15px; cursor: pointer;">
+                    </a>
+                    <p>Somos un equipo de fotógrafos profesionales dedicados a capturar tus momentos más especiales.</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">Arequipa, Perú | +51 999 999 999</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FocusPoint. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/general.js"></script>
+    <script src="../js/reservas.js"></script>
+</body>
+
+</html>

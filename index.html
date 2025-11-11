@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - FocusPoint</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="logonew-.png" alt="ChristianDjFoto" style="height: 50px;">
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="html/sobre-mi.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="html/sesiones.html" class="nav-link">Sesiones</a></li>
+                    <li class="nav-item"><a href="html/reservas.html" class="nav-link">Reservas</a></li>
+                    <li class="nav-item">
+                        <button class="search-btn" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Barra de búsqueda -->
+    <div class="search-bar" id="searchBar">
+        <div class="search-container">
+            <input type="text" placeholder="Buscar..." class="search-input" id="searchInput">
+            <button class="close-search" id="closeSearch">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Capturando Momentos Inolvidables</h2>
+            <p class="hero-subtitle">Fotografía profesional para bodas, eventos y sesiones personalizadas</p>
+            <a href="reservas.html" class="btn-primary">Reserva tu sesión</a>
+        </div>
+    </section>
+
+    <!-- Preview About -->
+    <section class="preview-section">
+        <div class="container">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <div class="preview-content">
+                <div class="preview-image">
+                    <img src="imgPhotos/fotoHomeFinal.png" alt="FocusPoint Team">
+                </div>
+                <div class="preview-text">
+                    <h3>Nuestra Pasión por la Fotografía</h3>
+                    <p>Somos FocusPoint, un equipo de fotógrafos profesionales dedicados a capturar momentos únicos e
+                        irrepetibles. Con más de 5 años de experiencia, nuestro objetivo es crear recuerdos que perduren
+                        para siempre.</p>
+                    <p>Nos especializamos en fotografía de bodas, eventos corporativos, sesiones familiares y productos,
+                        trabajando siempre con dedicación, creatividad y profesionalismo.</p>
+                    <a href="html/sobre-mi.html" class="btn-secondary">Conoce más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preview Sesiones -->
+    <section class="preview-section">
+        <div class="container">
+            <h2 class="section-title">Mis Servicios</h2>
+            <div class="gallery-preview">
+                <div class="gallery-item">
+                    <img src="imgPhotos/boda2.jpg" alt="Bodas">
+                    <div style="padding: 20px; background: white;">
+                        <h3 style="color: var(--color-acento); margin-bottom: 10px;">Bodas</h3>
+                        <p style="color: var(--color-contraste); margin-bottom: 15px;">Captura cada detalle de tu día
+                            especial</p>
+                        <a href="html/sesiones.html" class="btn-secondary">Ver más</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imgPhotos/social12.jpeg" alt="Eventos">
+                    <div style="padding: 20px; background: white;">
+                        <h3 style="color: var(--color-acento); margin-bottom: 10px;">Eventos</h3>
+                        <p style="color: var(--color-contraste); margin-bottom: 15px;">Cobertura completa para tus
+                            eventos</p>
+                        <a href="html/sesiones.html" class="btn-secondary">Ver más</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imgPhotos/retrato3.jpeg" alt="Retratos">
+                    <div style="padding: 20px; background: white;">
+                        <h3 style="color: var(--color-acento); margin-bottom: 10px;">Retratos</h3>
+                        <p style="color: var(--color-contraste); margin-bottom: 15px;">Sesiones personalizadas únicas
+                        </p>
+                        <a href="html/sesiones.html" class="btn-secondary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿Listo para Capturar tus Mejores Momentos?</h2>
+            <p>Reserva tu sesión ahora y hagamos realidad tus ideas</p>
+            <a href="html/reservas.html" class="btn-primary">Reservar ahora</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html">
+                        <img src="logonew-.png" alt="FocusPoint"
+                            style="height: 60px; margin-bottom: 15px; cursor: pointer;">
+                    </a>
+                    <p>Somos un equipo de fotógrafos profesionales dedicados a capturar tus momentos más especiales.</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">Arequipa, Perú | +51 999 999 999</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FocusPoint. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/general.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

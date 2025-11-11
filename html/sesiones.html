@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesiones - FocusPoint</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/sesiones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="../logonew-.png" alt="ChristianDjFoto" style="height: 50px;">
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="sobre-mi.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="sesiones.html" class="nav-link active">Sesiones</a></li>
+                    <li class="nav-item"><a href="reservas.html" class="nav-link">Reservas</a></li>
+                    <li class="nav-item">
+                        <button class="search-btn" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Barra de búsqueda -->
+    <div class="search-bar" id="searchBar">
+        <div class="search-container">
+            <input type="text" placeholder="Buscar..." class="search-input" id="searchInput">
+            <button class="close-search" id="closeSearch">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="sesiones-hero">
+        <div>
+            <h1>Nuestras Sesiones</h1>
+            <p>Encuentra el servicio perfecto para ti</p>
+        </div>
+    </section>
+
+    <!-- Sesiones principales -->
+    <section class="sesiones-section">
+        <div class="container">
+            <h2 class="section-title">Servicios de FocusPoint</h2>
+            <div class="sesiones-grid">
+                <!-- Bodas -->
+                <div class="sesion-card">
+                    <div class="sesion-image">
+                        <span class="sesion-badge">Popular</span>
+                        <img src="../imgPhotos/boda1.jpg" alt="Bodas">
+                    </div>
+                    <div class="sesion-info">
+                        <h3>Fotografía de Bodas</h3>
+                        <p>Capturamos cada instante mágico de tu día especial: desde los preparativos hasta el último
+                            baile, para que revivas tu historia de amor con elegancia y emoción.</p>
+                        <ul class="sesion-features">
+                            <li><i class="fas fa-check-circle"></i> Cobertura completa del evento</li>
+                            <li><i class="fas fa-check-circle"></i> Sesión pre-boda incluida</li>
+                            <li><i class="fas fa-check-circle"></i> 500+ fotos editadas profesionalmente</li>
+                            <li><i class="fas fa-check-circle"></i> Álbum digital premium y USB personalizado</li>
+                        </ul>
+                        <div class="sesion-price">
+                            <span class="price-tag">S/ 850</span>
+                            <a href="reservas.html" class="btn-primary">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eventos Corporativos -->
+                <div class="sesion-card">
+                    <div class="sesion-image">
+                        <img src="../imgPhotos/social10.jpeg" alt="Eventos">
+                    </div>
+                    <div class="sesion-info">
+                        <h3>Eventos Corporativos</h3>
+                        <p>Cobertura profesional para conferencias, lanzamientos de marca, capacitaciones y
+                            celebraciones empresariales.</p>
+                        <ul class="sesion-features">
+                            <li><i class="fas fa-check-circle"></i> Cobertura de 4 a 8 horas</li>
+                            <li><i class="fas fa-check-circle"></i> Fotos de alta calidad para redes y prensa</li>
+                            <li><i class="fas fa-check-circle"></i> Entrega digital en 48 horas</li>
+                            <li><i class="fas fa-check-circle"></i> Video institucional (opcional)</li>
+                        </ul>
+                        <div class="sesion-price">
+                            <span class="price-tag">S/ 520</span>
+                            <a href="reservas.html" class="btn-primary">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Promoción y Graduación -->
+                <div class="sesion-card">
+                    <div class="sesion-image">
+                        <img src="../imgPhotos/social17.jpeg" alt="Graduación">
+                    </div>
+                    <div class="sesion-info">
+                        <h3>Sesiones de Promoción y Graduación</h3>
+                        <p>Celebra tus logros con una sesión que refleje tu estilo y personalidad.</p>
+                        <ul class="sesion-features">
+                            <li><i class="fas fa-check-circle"></i> 2 fotógrafos profesionales</li>
+                            <li><i class="fas fa-check-circle"></i> Sesión individual o grupal</li>
+                            <li><i class="fas fa-check-circle"></i> 80+ fotos editadas</li>
+                            <li><i class="fas fa-check-circle"></i> Fondo temático o locación elegida</li>
+                        </ul>
+                        <div class="sesion-price">
+                            <span class="price-tag">S/ 400</span>
+                            <a href="reservas.html" class="btn-primary">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eventos Sociales -->
+                <div class="sesion-card">
+                    <div class="sesion-image">
+                        <img src="../imgPhotos/social5.jpeg" alt="Eventos Sociales">
+                    </div>
+                    <div class="sesion-info">
+                        <h3>Eventos Sociales</h3>
+                        <p>Cumpleaños, bautizos, aniversarios o cualquier celebración especial.</p>
+                        <ul class="sesion-features">
+                            <li><i class="fas fa-check-circle"></i> Cobertura de 3 a 6 horas</li>
+                            <li><i class="fas fa-check-circle"></i> Edición profesional de 150 fotos</li>
+                            <li><i class="fas fa-check-circle"></i> Mini video resumen (1 minuto)</li>
+                            <li><i class="fas fa-check-circle"></i> Galería privada y descarga HD</li>
+                        </ul>
+                        <div class="sesion-price">
+                            <span class="price-tag">S/ 600</span>
+                            <a href="reservas.html" class="btn-primary">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fotografía de Productos -->
+                <div class="sesion-card">
+                    <div class="sesion-image">
+                        <img src="../imgPhotos/producto3.jpeg" alt="Productos">
+                    </div>
+                    <div class="sesion-info">
+                        <h3>Fotografía de Productos</h3>
+                        <p>Ideal para catálogos, redes sociales o tiendas virtuales.</p>
+                        <ul class="sesion-features">
+                            <li><i class="fas fa-check-circle"></i> Sesión de producto (30 a 50 fotos)</li>
+                            <li><i class="fas fa-check-circle"></i> Fondo neutro o creativo</li>
+                            <li><i class="fas fa-check-circle"></i> Edición profesional de color y luz</li>
+                            <li><i class="fas fa-check-circle"></i> Entrega digital optimizada</li>
+                        </ul>
+                        <div class="sesion-price">
+                            <span class="price-tag">S/ 380</span>
+                            <a href="reservas.html" class="btn-primary">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Retratos Profesionales -->
+                <div class="sesion-card">
+                    <div class="sesion-image">
+                        <img src="../imgPhotos/retrato4.jpeg" alt="Retratos">
+                    </div>
+                    <div class="sesion-info">
+                        <h3>Retratos Profesionales</h3>
+                        <p>Refleja tu esencia en retratos personales o corporativos. Perfecto para perfiles, CV o imagen
+                            de marca.</p>
+                        <ul class="sesion-features">
+                            <li><i class="fas fa-check-circle"></i> Sesión de 1 hora</li>
+                            <li><i class="fas fa-check-circle"></i> 50 fotos editadas</li>
+                            <li><i class="fas fa-check-circle"></i> Fondo o locación elegida</li>
+                            <li><i class="fas fa-check-circle"></i> Entrega digital en 72 horas</li>
+                        </ul>
+                        <div class="sesion-price">
+                            <span class="price-tag">S/ 280</span>
+                            <a href="reservas.html" class="btn-primary">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extras Personalizables -->
+            <div style="margin-top: 60px; padding: 40px; background: #f8f9fa; border-radius: 10px;">
+                <h3 style="text-align: center; color: var(--color-acento); margin-bottom: 30px;">Extras
+                    Personalizables</h3>
+                <p style="text-align: center; margin-bottom: 30px;">Agrega servicios a tu paquete:</p>
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto;">
+                    <div
+                        style="padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <p><strong>Videógrafo adicional</strong></p>
+                        <p style="color: var(--color-acento); font-size: 1.2em; font-weight: bold;">S/ 200</p>
+                    </div>
+                    <div
+                        style="padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <p><strong>Tomas con dron</strong></p>
+                        <p style="color: var(--color-acento); font-size: 1.2em; font-weight: bold;">S/ 220</p>
+                    </div>
+                    <div
+                        style="padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <p><strong>Mini reel para redes sociales</strong></p>
+                        <p style="color: var(--color-acento); font-size: 1.2em; font-weight: bold;">S/ 100</p>
+                    </div>
+                    <div
+                        style="padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <p><strong>USB personalizado con caja FocusPoint</strong></p>
+                        <p style="color: var(--color-acento); font-size: 1.2em; font-weight: bold;">S/ 50</p>
+                    </div>
+                    <div
+                        style="padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <p><strong>Álbum físico empastado</strong></p>
+                        <p style="color: var(--color-acento); font-size: 1.2em; font-weight: bold;">S/ 180</p>
+                    </div>
+                    <div
+                        style="padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <p><strong>Sesión de fotos adicional</strong></p>
+                        <p style="color: var(--color-acento); font-size: 1.2em; font-weight: bold;">S/ 150</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería con tabs -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Galería de Trabajos</h2>
+            <div class="gallery-tabs">
+                <button class="tab-btn active" data-category="all">Todos</button>
+                <button class="tab-btn" data-category="bodas">Bodas</button>
+                <button class="tab-btn" data-category="eventos">Eventos Sociales</button>
+                <button class="tab-btn" data-category="retratos">Retratos</button>
+                <button class="tab-btn" data-category="productos">Productos</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="bodas">
+                    <img src="../imgPhotos/boda1.jpg" alt="Boda 1">
+                    <div class="gallery-overlay">
+                        <p>Boda Romántica</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bodas">
+                    <img src="../imgPhotos/boda2.jpg" alt="Boda 2">
+                    <div class="gallery-overlay">
+                        <p>Ceremonia Especial</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bodas">
+                    <img src="../imgPhotos/boda3.jpg" alt="Boda 3">
+                    <div class="gallery-overlay">
+                        <p>Día Inolvidable</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social1.jpeg" alt="Evento Social 1">
+                    <div class="gallery-overlay">
+                        <p>Evento Social</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social1.2.jpeg" alt="Evento Social">
+                    <div class="gallery-overlay">
+                        <p>Celebración</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social3.jpeg" alt="Evento Social 3">
+                    <div class="gallery-overlay">
+                        <p>Celebración Especial</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social4.jpeg" alt="Evento Social 4">
+                    <div class="gallery-overlay">
+                        <p>Fiesta</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social5.jpeg" alt="Evento Social 5">
+                    <div class="gallery-overlay">
+                        <p>Evento Corporativo</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social6.jpeg" alt="Evento Social 6">
+                    <div class="gallery-overlay">
+                        <p>Reunión Social</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social7.jpeg" alt="Evento Social 7">
+                    <div class="gallery-overlay">
+                        <p>Fiesta Empresarial</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social8.jpeg" alt="Evento Social 8">
+                    <div class="gallery-overlay">
+                        <p>Cumpleaños</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social10.jpeg" alt="Evento Social 10">
+                    <div class="gallery-overlay">
+                        <p>Aniversario</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social11.jpeg" alt="Evento Social 11">
+                    <div class="gallery-overlay">
+                        <p>Evento Especial</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social12.jpeg" alt="Evento Social 12">
+                    <div class="gallery-overlay">
+                        <p>Gala Especial</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social13.jpeg" alt="Evento Social 13">
+                    <div class="gallery-overlay">
+                        <p>Bautizo</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social14.jpeg" alt="Evento Social 14">
+                    <div class="gallery-overlay">
+                        <p>Celebración Familiar</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social15.jpeg" alt="Evento Social 15">
+                    <div class="gallery-overlay">
+                        <p>Evento Especial</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social16.jpeg" alt="Evento Social 16">
+                    <div class="gallery-overlay">
+                        <p>Fiesta Temática</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social17.jpeg" alt="Evento Social 17">
+                    <div class="gallery-overlay">
+                        <p>Graduación</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social18.jpeg" alt="Evento Social 18">
+                    <div class="gallery-overlay">
+                        <p>Conferencia</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social19.jpeg" alt="Evento Social 19">
+                    <div class="gallery-overlay">
+                        <p>Lanzamiento</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="../imgPhotos/social20.jpeg" alt="Evento Social 20">
+                    <div class="gallery-overlay">
+                        <p>Evento Corporativo</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="retratos">
+                    <img src="../imgPhotos/retrato1.jpeg" alt="Retrato 1">
+                    <div class="gallery-overlay">
+                        <p>Retrato Personal</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="retratos">
+                    <img src="../imgPhotos/retrato2.jpeg" alt="Retrato 2">
+                    <div class="gallery-overlay">
+                        <p>Sesión Individual</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="retratos">
+                    <img src="../imgPhotos/retrato3.jpeg" alt="Retrato 3">
+                    <div class="gallery-overlay">
+                        <p>Retrato Profesional</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="retratos">
+                    <img src="../imgPhotos/retrato4.jpeg" alt="Retrato 4">
+                    <div class="gallery-overlay">
+                        <p>Sesión Exterior</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="retratos">
+                    <img src="../imgPhotos/retrato5.jpeg" alt="Retrato 5">
+                    <div class="gallery-overlay">
+                        <p>Sesión Familiar</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="retratos">
+                    <img src="../imgPhotos/retrato6.jpeg" alt="Retrato 6">
+                    <div class="gallery-overlay">
+                        <p>Retrato Artístico</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="retratos">
+                    <img src="../imgPhotos/retrato7.jpeg" alt="Retrato 7">
+                    <div class="gallery-overlay">
+                        <p>Sesión Creativa</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="productos">
+                    <img src="../imgPhotos/producto1.jpeg" alt="Producto 1">
+                    <div class="gallery-overlay">
+                        <p>Fotografía de Producto</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="productos">
+                    <img src="../imgPhotos/producto2.jpeg" alt="Producto 2">
+                    <div class="gallery-overlay">
+                        <p>Catálogo Comercial</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="productos">
+                    <img src="../imgPhotos/producto3.jpeg" alt="Producto 3">
+                    <div class="gallery-overlay">
+                        <p>Producto Profesional</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="productos">
+                    <img src="../imgPhotos/producto4.jpeg" alt="Producto 4">
+                    <div class="gallery-overlay">
+                        <p>E-commerce</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="productos">
+                    <img src="../imgPhotos/producto5.jpeg" alt="Producto 5">
+                    <div class="gallery-overlay">
+                        <p>Catálogo Fashion</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="productos">
+                    <img src="../imgPhotos/prodcutos6.jpeg" alt="Producto 6">
+                    <div class="gallery-overlay">
+                        <p>Producto Comercial</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="productos">
+                    <img src="../imgPhotos/producto7.jpeg" alt="Producto 7">
+                    <div class="gallery-overlay">
+                        <p>Fotografía Publicitaria</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="productos">
+                    <img src="../imgPhotos/producto8.jpeg" alt="Producto 8">
+                    <div class="gallery-overlay">
+                        <p>Catálogo Digital</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="productos">
+                    <img src="../imgPhotos/producto9.jpeg" alt="Producto 9">
+                    <div class="gallery-overlay">
+                        <p>Producto Premium</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="productos">
+                    <img src="../imgPhotos/producto10.jpeg" alt="Producto 10">
+                    <div class="gallery-overlay">
+                        <p>E-commerce Pro</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="productos">
+                    <img src="../imgPhotos/producto11.jpeg" alt="Producto 11">
+                    <div class="gallery-overlay">
+                        <p>Catálogo Empresarial</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="productos">
+                    <img src="../imgPhotos/producto12.jpeg" alt="Producto 12">
+                    <div class="gallery-overlay">
+                        <p>Fotografía Comercial</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="productos">
+                    <img src="../imgPhotos/producto13.jpeg" alt="Producto 13">
+                    <div class="gallery-overlay">
+                        <p>Producto Profesional</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paquetes especiales -->
+    <section class="packages-section">
+        <div class="container">
+            <h2 class="section-title">Paquetes Especiales</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <h3>Básico</h3>
+                    <div class="package-price">S/ 500</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> 4 horas de cobertura</li>
+                        <li><i class="fas fa-check"></i> 150 fotos editadas</li>
+                        <li><i class="fas fa-check"></i> Galería online</li>
+                        <li><i class="fas fa-check"></i> Entrega en 15 días</li>
+                    </ul>
+                    <a href="reservas.html" class="btn-secondary">Seleccionar</a>
+                </div>
+
+                <div class="package-card featured">
+                    <span class="popular-badge">MÁS POPULAR</span>
+                    <h3>Premium</h3>
+                    <div class="package-price">S/ 1,200</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> 8 horas de cobertura</li>
+                        <li><i class="fas fa-check"></i> 400+ fotos editadas</li>
+                        <li><i class="fas fa-check"></i> Álbum físico 30x30cm</li>
+                        <li><i class="fas fa-check"></i> Video resumen</li>
+                        <li><i class="fas fa-check"></i> Sesión pre-evento</li>
+                        <li><i class="fas fa-check"></i> Entrega en 10 días</li>
+                    </ul>
+                    <a href="reservas.html" class="btn-primary">Seleccionar</a>
+                </div>
+
+                <div class="package-card">
+                    <h3>Deluxe</h3>
+                    <div class="package-price">S/ 2,000</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Cobertura completa</li>
+                        <li><i class="fas fa-check"></i> 600+ fotos editadas</li>
+                        <li><i class="fas fa-check"></i> 2 álbumes físicos</li>
+                        <li><i class="fas fa-check"></i> Video profesional</li>
+                        <li><i class="fas fa-check"></i> 2 fotógrafos</li>
+                        <li><i class="fas fa-check"></i> Drone (si aplica)</li>
+                        <li><i class="fas fa-check"></i> Entrega en 7 días</li>
+                    </ul>
+                    <a href="reservas.html" class="btn-secondary">Seleccionar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="../index.html">
+                        <img src="../logonew-.png" alt="FocusPoint" style="height: 60px; margin-bottom: 15px; cursor: pointer;">
+                    </a>
+                    <p>Somos un equipo de fotógrafos profesionales dedicados a capturar tus momentos más especiales.</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">Arequipa, Perú | +51 999 999 999</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FocusPoint. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/general.js"></script>
+    <script src="../js/sesiones.js"></script>
+</body>
+
+</html>
